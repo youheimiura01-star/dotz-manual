@@ -1,10 +1,10 @@
 import { google } from "@ai-sdk/google";
 import { streamText, UIMessage, convertToModelMessages } from "ai";
-import { KARITORUCHAT_KNOWLEDGE, MAJIRIPI_KNOWLEDGE } from "@/lib/knowledge";
+import { KARITORUCHAT_KNOWLEDGE, MAJIRIPI_KNOWLEDGE, RAKURAKUMALL_KNOWLEDGE } from "@/lib/knowledge";
 
 export const maxDuration = 30;
 
-const KARITORUCHAT_SYSTEM = `あなたは株式会社DOTZの「カリトルチャット」を販売する電話営業スタッフ向けAIアシスタントです。
+const KARITORUCHAT_SYSTEM = `あなたはDOTZ株式会社の「カリトルチャット」を販売する電話営業スタッフ向けAIアシスタントです。
 ECサイト（年商約1億円以上）の広告運用担当者にアポイントを取得するスタッフからの質問に、
 営業支援マニュアルに基づいて簡潔かつ実用的に回答してください。
 
@@ -22,7 +22,26 @@ ECサイト（年商約1億円以上）の広告運用担当者にアポイン�
 ${KARITORUCHAT_KNOWLEDGE}
 `;
 
-const MAJIRIPI_SYSTEM = `あなたは株式会社DOTZの「マジリピ」を販売する電話営業スタッフ向けAIアシスタントです。
+const RAKURAKUMALL_SYSTEM = `あなたはDOTZ株式会社の「らくらくモール」を販売する電話営業スタッフ向けAIアシスタントです。
+楽天市場の出店者に対してLINE公式アカウント運用代行とセール運用BPOの導入を提案するスタッフからの質問に、
+営業支援マニュアルに基づいて簡潔かつ実用的に回答してください。
+
+## 回答ルール
+1. 電話営業の現場で即使える具体的なアドバイスを出す（「〜してください」「〜と伝えましょう」形式）
+2. トークスクリプトを求められたら、該当スクリプトを引用して回答する
+3. 断り文句への切り返しは、具体的な言い回しで提示する
+4. らくらくモールの強み（LINE Frontliner監修、楽天特化、セールBPOワンストップ、業種別シナリオ）を常に意識して回答する
+5. 料金プラン（Light 6.5万/Standard 9.5万/Pro 22万+、セールBPO 5万+）を正確に伝える
+6. 楽天市場特有の事情（セールイベント、レビュー重要性、モール内広告等）に配慮した回答をする
+7. マニュアルにない質問には「マニュアル範囲外の内容です。営業企画部にご確認ください」と答える
+8. 回答は箇条書きや番号付きリストで見やすくする
+9. 丁寧だが簡潔に（架電の合間にスマホで読むことを想定）
+
+## ナレッジベース
+${RAKURAKUMALL_KNOWLEDGE}
+`;
+
+const MAJIRIPI_SYSTEM = `あなたはDOTZ株式会社の「マジリピ」を販売する電話営業スタッフ向けAIアシスタントです。
 飲食店のオーナー・店長にマジリピの導入を提案するスタッフからの質問に、
 営業支援マニュアルに基づいて簡潔かつ実用的に回答してください。
 
@@ -44,7 +63,10 @@ ${MAJIRIPI_KNOWLEDGE}
 export async function POST(req: Request) {
   const { messages, product }: { messages: UIMessage[]; product: string } = await req.json();
 
-  const systemPrompt = product === "majiripi" ? MAJIRIPI_SYSTEM : KARITORUCHAT_SYSTEM;
+  const systemPrompt =
+    product === "majiripi" ? MAJIRIPI_SYSTEM :
+    product === "rakurakumall" ? RAKURAKUMALL_SYSTEM :
+    KARITORUCHAT_SYSTEM;
 
   const result = streamText({
     model: google("gemini-2.5-flash"),

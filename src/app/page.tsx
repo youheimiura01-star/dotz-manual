@@ -6,9 +6,10 @@ import { ManualViewer } from "@/components/manual/ManualViewer";
 import { ChatPanel } from "@/components/chat/ChatPanel";
 import { KARITORUCHAT_SECTIONS } from "@/lib/karitoruchat-sections";
 import { MAJIRIPI_SECTIONS } from "@/lib/majiripi-sections";
+import { RAKURAKUMALL_SECTIONS } from "@/lib/rakurakumall-sections";
 
 type View = "manual" | "chat";
-type Product = "karitoruchat" | "majiripi";
+type Product = "karitoruchat" | "majiripi" | "rakurakumall";
 
 const PRODUCTS = {
   karitoruchat: {
@@ -20,6 +21,11 @@ const PRODUCTS = {
     name: "マジリピ",
     subtitle: "飲食店向け LINEリピーター獲得ツール",
     sections: MAJIRIPI_SECTIONS,
+  },
+  rakurakumall: {
+    name: "らくらくモール",
+    subtitle: "楽天市場向け LINE運用代行サービス",
+    sections: RAKURAKUMALL_SECTIONS,
   },
 } as const;
 
@@ -56,10 +62,20 @@ export default function Home() {
             >
               マジリピ
             </button>
+            <button
+              onClick={() => setProduct("rakurakumall")}
+              className={`rounded-md px-3 py-1.5 text-xs font-bold transition-colors ${
+                product === "rakurakumall"
+                  ? "bg-white text-primary-600"
+                  : "text-white/80 hover:text-white"
+              }`}
+            >
+              らくらくモール
+            </button>
           </div>
           <div className="hidden sm:block">
             <h1 className="text-sm font-bold text-white">{currentProduct.name} 電話営業マニュアル</h1>
-            <p className="text-xs text-white/60">{currentProduct.subtitle} ― 株式会社DOTZ</p>
+            <p className="text-xs text-white/60">{currentProduct.subtitle} ― DOTZ株式会社</p>
           </div>
         </div>
 

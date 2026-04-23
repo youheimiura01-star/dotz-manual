@@ -9,6 +9,7 @@ import {
   Shield,
   BarChart3,
   BookOpen,
+  ScrollText,
 } from "lucide-react";
 import type { ManualSection } from "@/lib/karitoruchat-sections";
 
@@ -20,6 +21,7 @@ const TAB_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Shield,
   BarChart3,
   BookOpen,
+  ScrollText,
 };
 
 export function ManualViewer({ sections }: { sections: ManualSection[] }) {

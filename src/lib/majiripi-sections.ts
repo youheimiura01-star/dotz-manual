@@ -94,7 +94,328 @@ export const MAJIRIPI_SECTIONS: ManualSection[] = [
   },
 
   /* ──────────────────────────────────────────────
-     Tab 2 : サービス概要
+     Tab 2 : 一気通貫スクリプト
+     ────────────────────────────────────────────── */
+  {
+    id: "full-script",
+    title: "一気通貫スクリプト",
+    icon: "ScrollText",
+    content: `
+<h2>一気通貫スクリプト</h2>
+<p>このスクリプトを上から順に読むだけで、受付突破からアポイント獲得まで完結します。飲食店向けの自然な会話の流れを身につけましょう。</p>
+
+<div class="callout callout-warning">
+  <strong>飲食店への架電時間帯に注意</strong><br>
+  <strong>11:00〜14:00（ランチ）</strong>、<strong>17:00〜21:00（ディナー）</strong>は絶対にかけてはいけません。<br>
+  ゴールデンタイムは <strong>14:30〜16:30</strong>（アイドルタイム）です。午前なら10:00〜10:45も有効です。
+</div>
+
+<h3>Phase 1：受付突破（〜30秒）</h3>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  お忙しいところ恐れ入ります。飲食店様向けのLINE活用のご案内でお電話しております。オーナー様か店長様はお手すきでしょうか？
+</div>
+
+<div class="callout callout-info">
+  <strong>営業感ゼロが鉄則</strong><br>
+  「ご案内」「お伝えしたいことがある」というスタンスで。「ご提案」「ご紹介」は営業ワードなので避けましょう。
+</div>
+
+<p><strong>▼「営業ですか？」と聞かれたら</strong></p>
+<div class="script-block">
+  <span class="label">相手</span>
+  営業のお電話ですか？
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  いえ、LINE社の公認プログラムに基づいた情報提供です。1分だけお時間いただけますか？
+</div>
+
+<p><strong>▼「今忙しい」と言われたら → 15秒ミニトーク</strong></p>
+<div class="script-block">
+  <span class="label">相手</span>
+  今ちょっと忙しいんだけど。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  大変失礼しました！15秒だけお伝えさせてください。LINEで飲食店のリピーターを自動で増やすツールを500店舗以上に提供しております。お店の作業はQRコードを案内するだけで、あとは全自動です。資料だけお送りしてもよろしいですか？
+</div>
+<p>→ 「はい」の場合は <strong>Phase 6B（資料送付クロージング）</strong>へ進んでください。</p>
+
+<a class="scene-card scene-link" data-tab="talk-script" data-heading="0">
+  <strong>受付突破フレーズをもっと見る →</strong><br>
+  3パターンの突破フレーズと切り返しの詳細はこちら
+</a>
+
+<h3>Phase 2：オープニング（〜1分）</h3>
+
+<p>オーナー・店長に繋がったら、いきなり商材の話をしない。まず共感から入ります。</p>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  お忙しいところありがとうございます。DOTZ株式会社の〇〇と申します。飲食店様のリピーター集客のお手伝いをしている者です。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  突然のお電話で恐縮なのですが、1つだけお伺いしてもいいですか？…「一度来てくれたお客様が、もっとリピートしてくれたらいいのに」と思われたことはありませんか？
+</div>
+
+<div class="script-block">
+  <span class="label">相手</span>
+  まあ、それは思いますね。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  ですよね。実は今、全国の飲食店様で「LINEを使ってリピーターを自動で増やす」という仕組みがすごく成果を出しておりまして。累計500店舗以上に導入いただいて、平均でリピート率が20%以上になっているんです。しかも、お店側の作業はお会計時にQRコードをご案内するだけで、あとは全部自動なんですね。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  2〜3分だけ、どんな仕組みかご説明させていただいてもよろしいですか？
+</div>
+
+<div class="callout callout-info">
+  <strong>【短縮30秒版】忙しそうなオーナーにはこちら</strong><br>
+  「30秒だけいいですか？…LINEで飲食店のリピーターを自動で増やすツールです。お店がやることはQRコード案内だけ。あとは全自動でメッセージやクーポンが届きます。500店舗以上で実績、リピート率平均20%超。詳しい資料をお送りしてもいいですか？」
+</div>
+
+<a class="scene-card scene-link" data-tab="talk-script" data-heading="1">
+  <strong>オープニングトークの詳細を見る →</strong><br>
+  共感の作り方・会話例の深掘りはこちら
+</a>
+
+<h3>Phase 3：ヒアリング（〜2分）</h3>
+
+<p>興味を持ってもらえたら、相手の状況を聞き出します。一問一答ではなく、共感を挟みながら自然に進めましょう。</p>
+
+<p><strong>質問①：来客数を把握する</strong></p>
+<div class="script-block">
+  <span class="label">営業</span>
+  ありがとうございます。少しだけお店の状況をお聞かせください。ちなみに、月間の来客数ってどのくらいでいらっしゃいますか？
+</div>
+<div class="script-block">
+  <span class="label">相手</span>
+  うーん、月に2,000人くらいかな。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  2,000人、ありがとうございます。
+</div>
+
+<p><strong>質問②：リピート率を確認する</strong></p>
+<div class="script-block">
+  <span class="label">営業</span>
+  そのうち、リピーターの方ってどのくらいの割合ですか？感覚で構いません。
+</div>
+<div class="script-block">
+  <span class="label">相手</span>
+  うーん、3割くらいかなぁ…。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  なるほど、3割。実はそれ、すごくもったいないんです。マジリピを導入された店舗さんは、メッセージを受け取ったお客様の再来店率が3倍以上になっているんですよ。
+</div>
+
+<p><strong>質問③：現在の集客手段を聞く</strong></p>
+<div class="script-block">
+  <span class="label">営業</span>
+  今、集客ってどんな方法をされていますか？グルメサイトとか、SNSとか…
+</div>
+<div class="script-block">
+  <span class="label">相手</span>
+  食べログは出してるけど、正直高くて…。Instagramもやらなきゃと思ってるけど、時間がなくて。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  わかります、本当にそうおっしゃる方多いんです。
+</div>
+
+<p><strong>質問④：グルメサイトの費用感を把握する</strong></p>
+<div class="script-block">
+  <span class="label">営業</span>
+  ちなみに、グルメサイトの掲載費って月にどのくらいですか？
+</div>
+<div class="script-block">
+  <span class="label">相手</span>
+  月5万くらいかな…。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  5万円…。食べログなどのグルメサイトは新規集客には強いんですけど、リピーターを増やすのは別の仕組みが必要なんですよね。しかもSNSは更新し続けないといけないので、現場を回しながらだと本当に大変ですよね。マジリピがお役に立てるのは、まさにその「忙しくても自動でリピーターを増やせる」という点なんです。
+</div>
+
+<div class="memo-box">
+  <span class="badge">検知ポイント</span>
+  以下のサインが出たらマジリピの提案チャンスです：<br>
+  ・リピート率が低い（30%以下）<br>
+  ・グルメサイトの掲載費が高い（月3万円以上）<br>
+  ・SNS運用に手が回っていない<br>
+  ・紙のスタンプカードを使っている（紛失・管理の手間）
+</div>
+
+<a class="scene-card scene-link" data-tab="target-needs" data-heading="2">
+  <strong>ニーズヒアリング質問集の詳細を見る →</strong><br>
+  業態別の深掘り質問や課題一覧はこちら
+</a>
+
+<h3>Phase 4：商材説明（〜2分）</h3>
+
+<p>ヒアリングで課題を共有できたら、マジリピの仕組みを「3ステップ」で説明します。シンプルに、わかりやすく。</p>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  マジリピの仕組みは3ステップです。とてもシンプルなので、すぐイメージしていただけると思います。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  まず1つ目。お客様が来店されたら、お会計のときにQRコードを読み取っていただきます。これだけでLINEの友だち追加と会員登録が同時に完了します。アプリのダウンロードも、面倒な入力フォームも一切ありません。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  2つ目。来店後は自動でフォローメッセージが届きます。来店翌日に「昨日はありがとうございました」、1週間後に「またお待ちしています」、しばらく来店がなければ「お久しぶりです、クーポンをお送りします」という具合に、全部自動です。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  3つ目が、デジタルスタンプカードです。来店するたびにスタンプが貯まって、特典がもらえる。紙のスタンプカードと違って、LINEの中にあるので紛失もありません。お客様に「また来よう」と思っていただける仕掛けです。
+</div>
+
+<div class="script-block">
+  <span class="label">営業</span>
+  これ、お店側でやることは本当に「QRコードを案内する」だけなんです。メッセージの内容も、配信タイミングも、クーポンの出し分けも、全部システムが自動でやります。新人のアルバイトさんでも初日から対応できるレベルです。
+</div>
+
+<div class="callout callout-success">
+  <strong>信頼感を高めるひと言</strong><br>
+  「ちなみに実績としては、累計500店舗以上に導入いただいていて、利用者は80万人を超えています。運営元のDOTZ株式会社は、国内わずか9名のLINE公認コンサルタント『LINE Frontliner』の認定企業です。」
+</div>
+
+<a class="scene-card scene-link" data-tab="service-overview" data-heading="0">
+  <strong>サービス概要の全体を見る →</strong><br>
+  4つの主要機能・LINEミニアプリの強み・会社概要はこちら
+</a>
+
+<h3>Phase 5：反論が出たら</h3>
+
+<p>飲食店オーナーは忙しいので、反論には共感→事実で簡潔に返しましょう。長々と説得しないのがコツです。</p>
+
+<p><strong>反論①「うちは小さい店だから」</strong></p>
+<div class="script-block">
+  <span class="label">相手</span>
+  うちは小さい店だから、そういうのは大手向けでしょ。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  おっしゃる気持ちわかります。でも実は個人店こそ効果大なんです。大手はアプリを自社開発できますが、個人店にはその予算がないですよね。LINEなら初期投資も少なく、お客様も使い慣れている。むしろ常連さんとの距離が近い個人店の強みを活かせるんです。
+</div>
+<a class="scene-card scene-link" data-tab="objection-handling" data-heading="0">
+  <strong>この反論の詳しい対応を見る →</strong>
+</a>
+
+<p><strong>反論②「スタッフが対応できない」</strong></p>
+<div class="script-block">
+  <span class="label">相手</span>
+  スタッフが対応できないよ。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  そうですよね、お忙しいですもんね。実はスタッフさんに覚えていただくことは1つだけです。「お会計のときにQRコードを読み取ってくださいね」とお客様にお伝えするだけ。新人バイトさんでも初日からOKです。あとは全部自動なので、仕事は増えません。
+</div>
+<a class="scene-card scene-link" data-tab="objection-handling" data-heading="2">
+  <strong>この反論の詳しい対応を見る →</strong>
+</a>
+
+<p><strong>反論③「効果あるの？」</strong></p>
+<div class="script-block">
+  <span class="label">相手</span>
+  本当に効果あるの？
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  当然のご質問です。データでお伝えすると、メッセージを受け取ったお客様は3倍以上再来店しています。具体例では、台湾茶カフェの春水堂さんでLINE経由の売上1,200万円を達成されました。まずは事例資料をご覧いただくだけでもイメージが湧くと思います。
+</div>
+<a class="scene-card scene-link" data-tab="objection-handling" data-heading="3">
+  <strong>この反論の詳しい対応を見る →</strong>
+</a>
+
+<p><strong>反論④「グルメサイトで十分」</strong></p>
+<div class="script-block">
+  <span class="label">相手</span>
+  食べログ出してるし、それで十分かな。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  グルメサイトをしっかり活用されているんですね。実はマジリピは代わりではなく、組み合わせて使うツールなんです。グルメサイトは「新規を呼ぶ」のが得意。マジリピは「来てくれたお客様をリピーター化する」仕組み。組み合わせることで、せっかく掲載費を払って来てもらったお客様を無駄にしない流れが完成します。
+</div>
+<a class="scene-card scene-link" data-tab="objection-handling" data-heading="5">
+  <strong>この反論の詳しい対応を見る →</strong>
+</a>
+
+<div class="memo-box">
+  <span class="badge">POINT</span>
+  飲食店オーナーは忙しい。共感→事実で簡潔に返すのが鉄則です。「いえ、そんなことはありません」は絶対NG。「おっしゃる通りです」「わかります」から入りましょう。
+</div>
+
+<h3>Phase 6：クロージング（〜1分）</h3>
+
+<p>必ず「次の接点」を確定して電話を終えます。曖昧なまま切らないでください。</p>
+
+<p><strong>パターンA：興味が高い場合（デモ提案）</strong></p>
+<div class="script-block">
+  <span class="label">営業</span>
+  ありがとうございます。実際の画面をお見せしながら、5分程度のデモをお見せすることもできます。今週の14時〜16時あたりはいかがですか？
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  オンラインで画面を共有するだけなので、お気軽にご覧いただければ。もちろん、見ていただいた上で「うちには合わないな」と思われたら、全然大丈夫ですので。
+</div>
+
+<p><strong>パターンB：まだ迷っている場合（資料送付 + 次回アポ）</strong></p>
+<div class="script-block">
+  <span class="label">営業</span>
+  もちろん、今すぐ決めていただく必要はまったくありません。まずは、導入店舗様の事例と効果データをまとめた資料をお送りさせてください。LINEとメール、どちらがご確認しやすいですか？
+</div>
+<div class="script-block">
+  <span class="label">相手</span>
+  LINEのほうがいいかな。
+</div>
+<div class="script-block">
+  <span class="label">営業</span>
+  かしこまりました、LINEでお送りしますね。資料をご覧いただいた後に、もしご質問があれば改めてお電話させてください。来週の火曜日か水曜日の14時〜16時あたりで、ご都合の良いお時間はありますか？
+</div>
+
+<div class="memo-box">
+  <span class="badge">POINT</span>
+  必ず次回接点の日時を確定させましょう。「いつがいいですか？」とオープンに聞かず、「来週火曜か水曜の14時〜16時は？」と<strong>アイドルタイム（14:30〜16:30）</strong>の選択肢を提案するのがコツです。
+</div>
+
+<a class="scene-card scene-link" data-tab="case-studies" data-heading="0">
+  <strong>導入事例・実績データを見る →</strong><br>
+  春水堂・枡元などの具体事例で説得力を高めましょう
+</a>
+
+<h3>電話終了後のアクション</h3>
+
+<div class="callout callout-info">
+  <strong>電話を切ったら、すぐにこの4つを実行してください。</strong>
+</div>
+
+<ul>
+  <li><strong>ヒアリング内容をCRMに記録</strong> — 業態・席数・月間来客数・リピート率・現在の集客方法・グルメサイト費用など</li>
+  <li><strong>資料送付は即日対応</strong> — 「あとで送ります」は忘れられる原因。電話を切って5分以内に送りましょう</li>
+  <li><strong>次回コール日をカレンダーに登録</strong> — 必ずアイドルタイム（14:30〜16:30）で設定</li>
+  <li><strong>反応メモを記録</strong> — 温度感（A:高/B:中/C:低）・出た反論・気になっていたポイントなどを残す</li>
+</ul>
+`,
+  },
+
+  /* ──────────────────────────────────────────────
+     Tab 3 : サービス概要
      ────────────────────────────────────────────── */
   {
     id: "service-overview",
@@ -185,13 +506,13 @@ export const MAJIRIPI_SECTIONS: ManualSection[] = [
   「お会計の際にこちらのQRコードをLINEで読み取っていただけますか？」と一言ご案内するだけ。あとはマジリピが自動でスタンプ付与、メッセージ配信、クーポン送付をすべて行います。スタッフの負担は限りなくゼロです。
 </div>
 
-<h3>株式会社DOTZ について</h3>
+<h3>DOTZ株式会社 について</h3>
 <table>
   <thead>
     <tr><th>項目</th><th>内容</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>会社名</strong></td><td>株式会社DOTZ</td></tr>
+    <tr><td><strong>会社名</strong></td><td>DOTZ株式会社</td></tr>
     <tr><td><strong>LINE Frontliner</strong></td><td>国内わずか9名のLINE公認コンサルタント在籍</td></tr>
     <tr><td><strong>運用実績</strong></td><td>累計10億通以上のメッセージ配信運用</td></tr>
     <tr><td><strong>社員のスキル</strong></td><td>従業員の90%以上がLINE Green Badge取得</td></tr>
@@ -367,7 +688,7 @@ export const MAJIRIPI_SECTIONS: ManualSection[] = [
 
 <div class="script-block">
   <span class="label">営業</span>
-  お忙しいところありがとうございます。株式会社DOTZの〇〇と申します。本日は、飲食店様のリピーター集客のお手伝いをしている者としてご連絡しました。
+  お忙しいところありがとうございます。DOTZ株式会社の〇〇と申します。本日は、飲食店様のリピーター集客のお手伝いをしている者としてご連絡しました。
 </div>
 
 <div class="script-block">
@@ -477,7 +798,7 @@ export const MAJIRIPI_SECTIONS: ManualSection[] = [
 
 <div class="script-block">
   <span class="label">営業</span>
-  ちなみに、実績としては累計500店舗以上に導入いただいていて、利用者は80万人を超えています。運営している株式会社DOTZは、LINE社の公認コンサルタント「LINE Frontliner」の認定を受けた会社で、累計10億通以上のLINEメッセージ配信の運用実績があります。
+  ちなみに、実績としては累計500店舗以上に導入いただいていて、利用者は80万人を超えています。運営しているDOTZ株式会社は、LINE社の公認コンサルタント「LINE Frontliner」の認定を受けた会社で、累計10億通以上のLINEメッセージ配信の運用実績があります。
 </div>
 
 <h3>クロージングトーク</h3>

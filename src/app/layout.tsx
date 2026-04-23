@@ -11,7 +11,7 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: "DOTZ | 電話営業マニュアル & AIアシスタント",
   description:
-    "株式会社DOTZ カリトルチャット・マジリピ 電話営業スタッフ向け営業支援マニュアルとAIアシスタント",
+    "DOTZ株式会社 カリトルチャット・マジリピ・らくらくモール 電話営業スタッフ向け営業支援マニュアルとAIアシスタント",
 };
 
 export default function RootLayout({

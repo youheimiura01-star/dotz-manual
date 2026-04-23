@@ -21,10 +21,23 @@ const MAJIRIPI_SUGGESTIONS = [
   "春水堂の導入事例を詳しく教えて",
 ];
 
-export function ChatPanel({ product }: { product: "karitoruchat" | "majiripi" }) {
+const RAKURAKUMALL_SUGGESTIONS = [
+  "らくらくモールの強みを30秒で説明するには？",
+  "「すでにLINE運用してます」と言われた時の切り返しは？",
+  "楽天市場の出店者へのオープニングトークを教えて",
+  "セール運用BPOのメリットを詳しく教えて",
+];
+
+export function ChatPanel({ product }: { product: "karitoruchat" | "majiripi" | "rakurakumall" }) {
   const storageKey = `dotz-chat-${product}`;
-  const suggestions = product === "karitoruchat" ? KARITORUCHAT_SUGGESTIONS : MAJIRIPI_SUGGESTIONS;
-  const productName = product === "karitoruchat" ? "カリトルチャット" : "マジリピ";
+  const suggestions =
+    product === "karitoruchat" ? KARITORUCHAT_SUGGESTIONS :
+    product === "majiripi" ? MAJIRIPI_SUGGESTIONS :
+    RAKURAKUMALL_SUGGESTIONS;
+  const productName =
+    product === "karitoruchat" ? "カリトルチャット" :
+    product === "majiripi" ? "マジリピ" :
+    "らくらくモール";
 
   const transport = useMemo(
     () => new DefaultChatTransport({ body: { product } }),
