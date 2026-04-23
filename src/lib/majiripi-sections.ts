@@ -94,6 +94,241 @@ export const MAJIRIPI_SECTIONS: ManualSection[] = [
   },
 
   /* ──────────────────────────────────────────────
+     Tab 3 : サービス概要
+     ────────────────────────────────────────────── */
+  {
+    id: "service-overview",
+    title: "サービス概要",
+    icon: "Zap",
+    content: `
+<h3>30秒で説明するマジリピ</h3>
+<div class="callout callout-info">
+  <strong>ワンフレーズ定義</strong><br>
+  マジリピは、<strong>飲食店のリピーターをLINEで自動的に増やす</strong>ツールです。<br>
+  お客様がLINEでQRコードを読み取るだけで会員登録が完了し、来店後のフォローメッセージやクーポン配信がすべて自動で行われます。
+</div>
+
+<div class="memo-box">
+  <span class="badge">POINT</span>
+  お客様に伝えるときは「<strong>LINEで飲食店のリピーターを自動で増やすツール</strong>」の一言から始めてください。難しい機能説明は後回しにし、まず「自動」「LINE」「リピーター」の3つのキーワードを印象づけましょう。
+</div>
+
+<h3>4つの主要機能</h3>
+<table>
+  <thead>
+    <tr><th>機能</th><th>概要</th><th>お店のメリット</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>スタンプ型会員証</strong></td>
+      <td>LINEミニアプリ上でデジタルスタンプカードを提供。来店ごとにスタンプが貯まり、特典と交換できます。</td>
+      <td>紙のスタンプカード不要。お客様がLINEを開くたびにお店を思い出してもらえます。</td>
+    </tr>
+    <tr>
+      <td><strong>クーポン自動配信</strong></td>
+      <td>来店回数・最終来店日・属性に応じて、最適なクーポンを自動で配信します。</td>
+      <td>「そろそろ来なくなりそうなお客様」にピンポイントでアプローチでき、離脱を防ぎます。</td>
+    </tr>
+    <tr>
+      <td><strong>メッセージ自動配信</strong></td>
+      <td>来店後のお礼・再来店促進・季節のご挨拶など、シナリオに沿ったメッセージが全自動で届きます。</td>
+      <td>忙しい店舗でも、一人ひとりに合わせたフォローが手間ゼロで実現します。</td>
+    </tr>
+    <tr>
+      <td><strong>顧客データ分析</strong></td>
+      <td>来店頻度・リピート率・クーポン利用率などをダッシュボードでリアルタイム確認できます。</td>
+      <td>「どのお客様が何回来ているか」が見える化され、次の打ち手が明確になります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout callout-success">
+  <strong>業態別シナリオを完全網羅</strong><br>
+  居酒屋・ラーメン・カフェ・レストラン・焼肉・ファストフードなど、業態ごとに最適化されたメッセージシナリオがあらかじめ用意されています。お店側でシナリオを考える必要はありません。
+</div>
+
+<h3>LINEミニアプリの強み</h3>
+<div class="stat-grid">
+  <div class="stat-highlight">
+    <span class="stat-label">アプリDL</span>
+    <span class="stat-value">不要</span>
+  </div>
+  <div class="stat-highlight">
+    <span class="stat-label">会員登録</span>
+    <span class="stat-value">不要</span>
+  </div>
+  <div class="stat-highlight">
+    <span class="stat-label">国内LINE利用率</span>
+    <span class="stat-value">96%</span>
+  </div>
+</div>
+<ul>
+  <li><strong>アプリのダウンロードが不要</strong> — LINEの中で動くので、お客様に新しいアプリを入れてもらう必要がありません。</li>
+  <li><strong>会員登録が不要</strong> — QRコードを読み取るだけ。名前やメールアドレスの入力は一切なし。お客様のストレスはゼロです。</li>
+  <li><strong>日本人の96%がLINEを使っている</strong> — 年齢層を問わず使えるプラットフォームなので、幅広い客層に対応できます。</li>
+  <li><strong>プッシュ通知でリーチできる</strong> — メールと違い、LINEメッセージは開封率が圧倒的に高く、確実にお客様に届きます。</li>
+</ul>
+
+<h3>店舗の負担はQRコード案内のみ</h3>
+<div class="flow-steps">
+  <span class="flow-step">お客様が来店</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-step">QRコードを読み取り</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-step">自動で友だち追加&会員登録</span>
+  <span class="flow-arrow">→</span>
+  <span class="flow-step">以降のフォローは全自動</span>
+</div>
+
+<div class="callout callout-info">
+  <strong>店舗スタッフがやることは本当にこれだけ</strong><br>
+  「お会計の際にこちらのQRコードをLINEで読み取っていただけますか？」と一言ご案内するだけ。あとはマジリピが自動でスタンプ付与、メッセージ配信、クーポン送付をすべて行います。スタッフの負担は限りなくゼロです。
+</div>
+
+<h3>DOTZ株式会社 について</h3>
+<table>
+  <thead>
+    <tr><th>項目</th><th>内容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>会社名</strong></td><td>DOTZ株式会社</td></tr>
+    <tr><td><strong>LINE Frontliner</strong></td><td>国内わずか9名のLINE公認コンサルタント在籍</td></tr>
+    <tr><td><strong>運用実績</strong></td><td>累計10億通以上のメッセージ配信運用</td></tr>
+    <tr><td><strong>社員のスキル</strong></td><td>従業員の90%以上がLINE Green Badge取得</td></tr>
+    <tr><td><strong>導入実績</strong></td><td>累計500店舗以上が導入</td></tr>
+  </tbody>
+</table>
+
+<div class="memo-box">
+  <span class="badge">POINT</span>
+  「LINE Frontliner」は国内にわずか9名しかいないLINEの公認コンサルタントです。この肩書きがあるだけで信頼感が大きく変わります。架電時には必ず伝えましょう。
+</div>
+`,
+  },
+
+  /* ──────────────────────────────────────────────
+     Tab 3 : ターゲット & ニーズ
+     ────────────────────────────────────────────── */
+  {
+    id: "target-needs",
+    title: "ターゲット & ニーズ",
+    icon: "Target",
+    content: `
+<h3>ターゲットプロファイル</h3>
+<p>マジリピのメインターゲットは <strong>飲食店のオーナー・店長・マーケティング担当者</strong> です。業態別の特徴を把握して、トークをカスタマイズしましょう。</p>
+
+<table>
+  <thead>
+    <tr><th>業態</th><th>特徴・傾向</th><th>刺さるキーワード</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>居酒屋</strong></td>
+      <td>常連客が売上の柱。宴会・コース予約が重要。スタッフの入れ替わりが激しい。</td>
+      <td>「常連さんの来店頻度UP」「宴会リマインド自動化」</td>
+    </tr>
+    <tr>
+      <td><strong>ラーメン店</strong></td>
+      <td>回転率重視。SNS映え意識。オーナー自ら厨房に立つことが多い。</td>
+      <td>「スタンプカードのデジタル化」「トッピング無料クーポン」</td>
+    </tr>
+    <tr>
+      <td><strong>カフェ</strong></td>
+      <td>女性客が多い。雰囲気・ブランド重視。リピート頻度が高い。</td>
+      <td>「ドリンク1杯無料で再来店」「季節メニュー自動告知」</td>
+    </tr>
+    <tr>
+      <td><strong>レストラン</strong></td>
+      <td>客単価が高い。記念日利用が多い。予約管理が重要。</td>
+      <td>「記念日リマインド自動配信」「VIP顧客の特別対応」</td>
+    </tr>
+    <tr>
+      <td><strong>焼肉店</strong></td>
+      <td>ファミリー・グループ利用が中心。週末に集中。平日の集客が課題。</td>
+      <td>「平日限定クーポンで稼働率UP」「家族向け特典」</td>
+    </tr>
+    <tr>
+      <td><strong>ファストフード</strong></td>
+      <td>低単価・高回転。若年層中心。アプリ疲れが顕著。</td>
+      <td>「アプリ不要のLINEスタンプカード」「来店ポイント自動付与」</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>架電タイミングのコツ</h3>
+<div class="callout callout-warning">
+  <strong>絶対に避ける時間帯</strong><br>
+  <ul>
+    <li><strong>11:00〜14:00</strong>（ランチタイム）— 厨房もホールもフル稼働。電話に出られても迷惑がられます。</li>
+    <li><strong>17:00〜21:00</strong>（ディナータイム）— 仕込み〜ピーク。絶対にかけてはいけません。</li>
+  </ul>
+</div>
+
+<div class="callout callout-success">
+  <strong>ゴールデンタイム</strong><br>
+  <ul>
+    <li><strong>14:30〜16:30</strong>（アイドルタイム）— 最も電話が繋がりやすく、オーナーも余裕がある時間帯です。</li>
+    <li><strong>10:00〜10:45</strong>（開店準備中）— 仕込みが始まる前。比較的落ち着いている店舗が多いです。</li>
+    <li><strong>月曜日の午前中</strong> — 定休日の翌日や週明けは、仕込みをしながら電話に出てくれるケースが多いです。</li>
+  </ul>
+</div>
+
+<div class="memo-box">
+  <span class="badge">POINT</span>
+  「お忙しい時間帯にすみません」ではなく、アイドルタイムに電話して「今お時間よろしいですか？」と聞くのがベスト。飲食店の方は「この人、飲食のことわかってるな」と感じてくれます。
+</div>
+
+<h3>よくある課題5選</h3>
+<ol>
+  <li><strong>リピーターが増えない</strong> — 新規客は来るがリピートに繋がらない。一度来たお客様が思い出してくれない。</li>
+  <li><strong>売上が安定しない</strong> — 曜日・天気・季節で波がある。平日や雨の日の集客に苦戦。</li>
+  <li><strong>忙しくて顧客フォローができない</strong> — 営業中は接客に追われ、閉店後は疲れて何もできない。</li>
+  <li><strong>グルメサイトの掲載費が高い</strong> — 月額数万円〜十数万円かけても費用対効果が見えない。新規集客頼みになっている。</li>
+  <li><strong>SNS運用に手が回らない</strong> — Instagram・X(Twitter)を更新する時間がない。投稿しても効果が測れない。</li>
+</ol>
+
+<h3>ニーズヒアリング質問集</h3>
+<p>以下の質問を自然な会話の中で使いましょう。一問一答ではなく、相手の回答に共感しながら深掘りするのがポイントです。</p>
+
+<div class="callout callout-info">
+  <strong>基本情報を把握する質問</strong>
+</div>
+<ol>
+  <li>「ちなみに、月間の来客数はどのくらいでいらっしゃいますか？」</li>
+  <li>「お客様のうち、リピーターの方ってどのくらいの割合ですか？」</li>
+  <li>「現在、集客ってどんな方法をされていますか？（グルメサイト・SNS・チラシなど）」</li>
+  <li>「LINE公式アカウントは今お使いですか？」</li>
+  <li>「スタンプカードや会員カードのようなものは出されていますか？」</li>
+</ol>
+
+<div class="callout callout-info">
+  <strong>課題を深掘りする質問</strong>
+</div>
+<ol start="6">
+  <li>「一度来てくださったお客様が、なかなかリピートしてくれない…というお悩みはありませんか？」</li>
+  <li>「平日や雨の日など、お客様が少ない日の集客って何か対策されていますか？」</li>
+  <li>「グルメサイトの費用対効果って、正直なところいかがですか？」</li>
+  <li>「来店されたお客様に、後日フォローのメッセージを送ったりはされていますか？」</li>
+  <li>「もし手間ゼロでリピーターが増える仕組みがあったら、ご興味ありますか？」</li>
+</ol>
+
+<div class="callout callout-info">
+  <strong>ニーズを確認する質問</strong>
+</div>
+<ol start="11">
+  <li>「お客様の来店データ（何回来ているか、最後にいつ来たか）って、今把握できていますか？」</li>
+  <li>「もしリピート率が今より20%上がったら、売上にどのくらいのインパクトがありそうですか？」</li>
+  <li>「新規集客と既存客のリピート、今どちらに力を入れたいとお考えですか？」</li>
+</ol>
+
+<div class="memo-box">
+  <span class="badge">POINT</span>
+  すべての質問を聞く必要はありません。会話の流れの中で自然に3〜5問使えればOKです。大切なのは「聞く→共感する→深掘りする」のサイクルです。
+</div>
+`,
+  },
+
+  /* ──────────────────────────────────────────────
      Tab 2 : 一気通貫スクリプト
      ────────────────────────────────────────────── */
   {
@@ -411,241 +646,6 @@ export const MAJIRIPI_SECTIONS: ManualSection[] = [
   <li><strong>次回コール日をカレンダーに登録</strong> — 必ずアイドルタイム（14:30〜16:30）で設定</li>
   <li><strong>反応メモを記録</strong> — 温度感（A:高/B:中/C:低）・出た反論・気になっていたポイントなどを残す</li>
 </ul>
-`,
-  },
-
-  /* ──────────────────────────────────────────────
-     Tab 3 : サービス概要
-     ────────────────────────────────────────────── */
-  {
-    id: "service-overview",
-    title: "サービス概要",
-    icon: "Zap",
-    content: `
-<h3>30秒で説明するマジリピ</h3>
-<div class="callout callout-info">
-  <strong>ワンフレーズ定義</strong><br>
-  マジリピは、<strong>飲食店のリピーターをLINEで自動的に増やす</strong>ツールです。<br>
-  お客様がLINEでQRコードを読み取るだけで会員登録が完了し、来店後のフォローメッセージやクーポン配信がすべて自動で行われます。
-</div>
-
-<div class="memo-box">
-  <span class="badge">POINT</span>
-  お客様に伝えるときは「<strong>LINEで飲食店のリピーターを自動で増やすツール</strong>」の一言から始めてください。難しい機能説明は後回しにし、まず「自動」「LINE」「リピーター」の3つのキーワードを印象づけましょう。
-</div>
-
-<h3>4つの主要機能</h3>
-<table>
-  <thead>
-    <tr><th>機能</th><th>概要</th><th>お店のメリット</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>スタンプ型会員証</strong></td>
-      <td>LINEミニアプリ上でデジタルスタンプカードを提供。来店ごとにスタンプが貯まり、特典と交換できます。</td>
-      <td>紙のスタンプカード不要。お客様がLINEを開くたびにお店を思い出してもらえます。</td>
-    </tr>
-    <tr>
-      <td><strong>クーポン自動配信</strong></td>
-      <td>来店回数・最終来店日・属性に応じて、最適なクーポンを自動で配信します。</td>
-      <td>「そろそろ来なくなりそうなお客様」にピンポイントでアプローチでき、離脱を防ぎます。</td>
-    </tr>
-    <tr>
-      <td><strong>メッセージ自動配信</strong></td>
-      <td>来店後のお礼・再来店促進・季節のご挨拶など、シナリオに沿ったメッセージが全自動で届きます。</td>
-      <td>忙しい店舗でも、一人ひとりに合わせたフォローが手間ゼロで実現します。</td>
-    </tr>
-    <tr>
-      <td><strong>顧客データ分析</strong></td>
-      <td>来店頻度・リピート率・クーポン利用率などをダッシュボードでリアルタイム確認できます。</td>
-      <td>「どのお客様が何回来ているか」が見える化され、次の打ち手が明確になります。</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout callout-success">
-  <strong>業態別シナリオを完全網羅</strong><br>
-  居酒屋・ラーメン・カフェ・レストラン・焼肉・ファストフードなど、業態ごとに最適化されたメッセージシナリオがあらかじめ用意されています。お店側でシナリオを考える必要はありません。
-</div>
-
-<h3>LINEミニアプリの強み</h3>
-<div class="stat-grid">
-  <div class="stat-highlight">
-    <span class="stat-label">アプリDL</span>
-    <span class="stat-value">不要</span>
-  </div>
-  <div class="stat-highlight">
-    <span class="stat-label">会員登録</span>
-    <span class="stat-value">不要</span>
-  </div>
-  <div class="stat-highlight">
-    <span class="stat-label">国内LINE利用率</span>
-    <span class="stat-value">96%</span>
-  </div>
-</div>
-<ul>
-  <li><strong>アプリのダウンロードが不要</strong> — LINEの中で動くので、お客様に新しいアプリを入れてもらう必要がありません。</li>
-  <li><strong>会員登録が不要</strong> — QRコードを読み取るだけ。名前やメールアドレスの入力は一切なし。お客様のストレスはゼロです。</li>
-  <li><strong>日本人の96%がLINEを使っている</strong> — 年齢層を問わず使えるプラットフォームなので、幅広い客層に対応できます。</li>
-  <li><strong>プッシュ通知でリーチできる</strong> — メールと違い、LINEメッセージは開封率が圧倒的に高く、確実にお客様に届きます。</li>
-</ul>
-
-<h3>店舗の負担はQRコード案内のみ</h3>
-<div class="flow-steps">
-  <span class="flow-step">お客様が来店</span>
-  <span class="flow-arrow">→</span>
-  <span class="flow-step">QRコードを読み取り</span>
-  <span class="flow-arrow">→</span>
-  <span class="flow-step">自動で友だち追加&会員登録</span>
-  <span class="flow-arrow">→</span>
-  <span class="flow-step">以降のフォローは全自動</span>
-</div>
-
-<div class="callout callout-info">
-  <strong>店舗スタッフがやることは本当にこれだけ</strong><br>
-  「お会計の際にこちらのQRコードをLINEで読み取っていただけますか？」と一言ご案内するだけ。あとはマジリピが自動でスタンプ付与、メッセージ配信、クーポン送付をすべて行います。スタッフの負担は限りなくゼロです。
-</div>
-
-<h3>DOTZ株式会社 について</h3>
-<table>
-  <thead>
-    <tr><th>項目</th><th>内容</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>会社名</strong></td><td>DOTZ株式会社</td></tr>
-    <tr><td><strong>LINE Frontliner</strong></td><td>国内わずか9名のLINE公認コンサルタント在籍</td></tr>
-    <tr><td><strong>運用実績</strong></td><td>累計10億通以上のメッセージ配信運用</td></tr>
-    <tr><td><strong>社員のスキル</strong></td><td>従業員の90%以上がLINE Green Badge取得</td></tr>
-    <tr><td><strong>導入実績</strong></td><td>累計500店舗以上が導入</td></tr>
-  </tbody>
-</table>
-
-<div class="memo-box">
-  <span class="badge">POINT</span>
-  「LINE Frontliner」は国内にわずか9名しかいないLINEの公認コンサルタントです。この肩書きがあるだけで信頼感が大きく変わります。架電時には必ず伝えましょう。
-</div>
-`,
-  },
-
-  /* ──────────────────────────────────────────────
-     Tab 3 : ターゲット & ニーズ
-     ────────────────────────────────────────────── */
-  {
-    id: "target-needs",
-    title: "ターゲット & ニーズ",
-    icon: "Target",
-    content: `
-<h3>ターゲットプロファイル</h3>
-<p>マジリピのメインターゲットは <strong>飲食店のオーナー・店長・マーケティング担当者</strong> です。業態別の特徴を把握して、トークをカスタマイズしましょう。</p>
-
-<table>
-  <thead>
-    <tr><th>業態</th><th>特徴・傾向</th><th>刺さるキーワード</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>居酒屋</strong></td>
-      <td>常連客が売上の柱。宴会・コース予約が重要。スタッフの入れ替わりが激しい。</td>
-      <td>「常連さんの来店頻度UP」「宴会リマインド自動化」</td>
-    </tr>
-    <tr>
-      <td><strong>ラーメン店</strong></td>
-      <td>回転率重視。SNS映え意識。オーナー自ら厨房に立つことが多い。</td>
-      <td>「スタンプカードのデジタル化」「トッピング無料クーポン」</td>
-    </tr>
-    <tr>
-      <td><strong>カフェ</strong></td>
-      <td>女性客が多い。雰囲気・ブランド重視。リピート頻度が高い。</td>
-      <td>「ドリンク1杯無料で再来店」「季節メニュー自動告知」</td>
-    </tr>
-    <tr>
-      <td><strong>レストラン</strong></td>
-      <td>客単価が高い。記念日利用が多い。予約管理が重要。</td>
-      <td>「記念日リマインド自動配信」「VIP顧客の特別対応」</td>
-    </tr>
-    <tr>
-      <td><strong>焼肉店</strong></td>
-      <td>ファミリー・グループ利用が中心。週末に集中。平日の集客が課題。</td>
-      <td>「平日限定クーポンで稼働率UP」「家族向け特典」</td>
-    </tr>
-    <tr>
-      <td><strong>ファストフード</strong></td>
-      <td>低単価・高回転。若年層中心。アプリ疲れが顕著。</td>
-      <td>「アプリ不要のLINEスタンプカード」「来店ポイント自動付与」</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>架電タイミングのコツ</h3>
-<div class="callout callout-warning">
-  <strong>絶対に避ける時間帯</strong><br>
-  <ul>
-    <li><strong>11:00〜14:00</strong>（ランチタイム）— 厨房もホールもフル稼働。電話に出られても迷惑がられます。</li>
-    <li><strong>17:00〜21:00</strong>（ディナータイム）— 仕込み〜ピーク。絶対にかけてはいけません。</li>
-  </ul>
-</div>
-
-<div class="callout callout-success">
-  <strong>ゴールデンタイム</strong><br>
-  <ul>
-    <li><strong>14:30〜16:30</strong>（アイドルタイム）— 最も電話が繋がりやすく、オーナーも余裕がある時間帯です。</li>
-    <li><strong>10:00〜10:45</strong>（開店準備中）— 仕込みが始まる前。比較的落ち着いている店舗が多いです。</li>
-    <li><strong>月曜日の午前中</strong> — 定休日の翌日や週明けは、仕込みをしながら電話に出てくれるケースが多いです。</li>
-  </ul>
-</div>
-
-<div class="memo-box">
-  <span class="badge">POINT</span>
-  「お忙しい時間帯にすみません」ではなく、アイドルタイムに電話して「今お時間よろしいですか？」と聞くのがベスト。飲食店の方は「この人、飲食のことわかってるな」と感じてくれます。
-</div>
-
-<h3>よくある課題5選</h3>
-<ol>
-  <li><strong>リピーターが増えない</strong> — 新規客は来るがリピートに繋がらない。一度来たお客様が思い出してくれない。</li>
-  <li><strong>売上が安定しない</strong> — 曜日・天気・季節で波がある。平日や雨の日の集客に苦戦。</li>
-  <li><strong>忙しくて顧客フォローができない</strong> — 営業中は接客に追われ、閉店後は疲れて何もできない。</li>
-  <li><strong>グルメサイトの掲載費が高い</strong> — 月額数万円〜十数万円かけても費用対効果が見えない。新規集客頼みになっている。</li>
-  <li><strong>SNS運用に手が回らない</strong> — Instagram・X(Twitter)を更新する時間がない。投稿しても効果が測れない。</li>
-</ol>
-
-<h3>ニーズヒアリング質問集</h3>
-<p>以下の質問を自然な会話の中で使いましょう。一問一答ではなく、相手の回答に共感しながら深掘りするのがポイントです。</p>
-
-<div class="callout callout-info">
-  <strong>基本情報を把握する質問</strong>
-</div>
-<ol>
-  <li>「ちなみに、月間の来客数はどのくらいでいらっしゃいますか？」</li>
-  <li>「お客様のうち、リピーターの方ってどのくらいの割合ですか？」</li>
-  <li>「現在、集客ってどんな方法をされていますか？（グルメサイト・SNS・チラシなど）」</li>
-  <li>「LINE公式アカウントは今お使いですか？」</li>
-  <li>「スタンプカードや会員カードのようなものは出されていますか？」</li>
-</ol>
-
-<div class="callout callout-info">
-  <strong>課題を深掘りする質問</strong>
-</div>
-<ol start="6">
-  <li>「一度来てくださったお客様が、なかなかリピートしてくれない…というお悩みはありませんか？」</li>
-  <li>「平日や雨の日など、お客様が少ない日の集客って何か対策されていますか？」</li>
-  <li>「グルメサイトの費用対効果って、正直なところいかがですか？」</li>
-  <li>「来店されたお客様に、後日フォローのメッセージを送ったりはされていますか？」</li>
-  <li>「もし手間ゼロでリピーターが増える仕組みがあったら、ご興味ありますか？」</li>
-</ol>
-
-<div class="callout callout-info">
-  <strong>ニーズを確認する質問</strong>
-</div>
-<ol start="11">
-  <li>「お客様の来店データ（何回来ているか、最後にいつ来たか）って、今把握できていますか？」</li>
-  <li>「もしリピート率が今より20%上がったら、売上にどのくらいのインパクトがありそうですか？」</li>
-  <li>「新規集客と既存客のリピート、今どちらに力を入れたいとお考えですか？」</li>
-</ol>
-
-<div class="memo-box">
-  <span class="badge">POINT</span>
-  すべての質問を聞く必要はありません。会話の流れの中で自然に3〜5問使えればOKです。大切なのは「聞く→共感する→深掘りする」のサイクルです。
-</div>
 `,
   },
 

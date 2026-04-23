@@ -103,6 +103,213 @@ export const RAKURAKUMALL_SECTIONS: ManualSection[] = [
   },
 
   /* ──────────────────────────────────────────────
+     Tab 3 : サービス概要
+     ────────────────────────────────────────────── */
+  {
+    id: "service-overview",
+    title: "サービス概要",
+    icon: "Zap",
+    content: `
+<h2>らくらくモール サービス概要</h2>
+
+<h3>30秒で説明するらくらくモール</h3>
+<div class="callout callout-info">
+  <strong>エレベーターピッチ</strong><br>
+  「らくらくモールは、<strong>楽天市場の出店者様向けにLINE公式アカウントの運用を完全代行するサービス</strong>です。
+  購入者を友だちに変え、自動シナリオ配信でリピート購入を促進。さらに楽天セール時の配信運用もワンストップでお任せいただけます。
+  LINE Frontliner（国内9名のみ）が監修する<strong>楽天市場に特化したLINE運用ノウハウ</strong>で、LTVの最大化を実現します。」
+</div>
+
+<h3>LINE運用代行の5大機能</h3>
+
+<h4>1. 友だち獲得施策</h4>
+<p>楽天市場で商品を購入したお客様をLINE公式アカウントの友だちに転換します。購入完了画面やサンクスメールからの誘導設計、友だち追加時のクーポン配布など、<strong>一度きりの購入者を顧客資産に変える</strong>仕組みを構築します。</p>
+
+<h4>2. 自動シナリオ配信</h4>
+<p>購入行動に基づいた自動トリガー配信を設定します。</p>
+<table>
+  <tr><th>商材タイプ</th><th>シナリオ例</th><th>配信タイミング</th></tr>
+  <tr><td>消耗品（サプリ・化粧品等）</td><td>「そろそろなくなる頃では？」リマインド</td><td>購入後30日・60日・90日</td></tr>
+  <tr><td>アパレル</td><td>コーディネート提案・新作入荷通知</td><td>配送完了後3日・14日</td></tr>
+  <tr><td>食品</td><td>レシピ提案・季節商品のご案内</td><td>配送完了後7日・季節変わり目</td></tr>
+  <tr><td>日用品・ギフト</td><td>リピート割引・関連商品レコメンド</td><td>購入後45日・記念日前</td></tr>
+</table>
+
+<h4>3. セグメント配信</h4>
+<p>購入履歴・購入頻度・購入カテゴリに基づいて友だちをセグメント分けし、<strong>一人ひとりに最適なメッセージ</strong>を配信します。一斉配信と比較してクリック率が平均2〜3倍向上します。</p>
+
+<h4>4. イベント連動配信</h4>
+<p>楽天市場の各種イベントに連動した配信を自動化します。</p>
+<ul>
+  <li><strong>スーパーSALE</strong>（3月・6月・9月・12月）</li>
+  <li><strong>お買い物マラソン</strong>（毎月）</li>
+  <li><strong>ワンダフルデー</strong>（毎月1日）</li>
+  <li><strong>5と0のつく日</strong>（5日・10日・15日・20日・25日・30日）</li>
+  <li><strong>ポイントバック祭</strong>（年4回）</li>
+  <li><strong>ブラックフライデー</strong>（11月）</li>
+</ul>
+
+<h4>5. レビュー促進自動化</h4>
+<p>商品到着後の最適なタイミングでレビュー依頼メッセージを自動配信。レビュー投稿でクーポンを進呈する仕組みにより、<strong>楽天市場内のレビュー数・評価を効率的に増加</strong>させます。</p>
+
+<h3>セール運用BPOサービス</h3>
+<div class="callout callout-warning">
+  <strong>楽天市場の鉄則</strong><br>
+  「楽天の売上はセールで決まる」— 年間売上の大部分がセール期間に集中します。<br>
+  特に<strong>セール開始0〜2時間の初速</strong>がランキングと露出を決定づけ、その後の売上を左右します。
+</div>
+
+<h4>初速最大化の5フェーズ配信</h4>
+<table>
+  <tr><th>フェーズ</th><th>タイミング</th><th>配信内容</th></tr>
+  <tr><td><strong>Phase 1</strong></td><td>セール前日</td><td>タイムセール予告・クーポンプレビュー配信</td></tr>
+  <tr><td><strong>Phase 2</strong></td><td>00:00（セール開始）</td><td>一斉配信 — セール開始通知・目玉商品案内</td></tr>
+  <tr><td><strong>Phase 3</strong></td><td>+30分</td><td>未開封者への追撃配信・リマインド</td></tr>
+  <tr><td><strong>Phase 4</strong></td><td>セール期間中</td><td>日替わり特集・在庫僅少通知・ポイント訴求</td></tr>
+  <tr><td><strong>Phase 5</strong></td><td>セール終盤</td><td>ラストチャンス訴求・次回イベント予告</td></tr>
+</table>
+
+<h4>BPO 4つの完全運用</h4>
+<ol>
+  <li><strong>配信設計</strong> — カレンダー管理、シナリオ設計、セグメント最適化</li>
+  <li><strong>クリエイティブ制作</strong> — メッセージ文面、画像、リッチメニュー作成</li>
+  <li><strong>オペレーション配信</strong> — 予約配信、代行配信、リアルタイム監視</li>
+  <li><strong>改善</strong> — A/Bテスト、分析レポート、週次改善提案</li>
+</ol>
+
+<h3>料金プラン</h3>
+<h4>LINE運用代行</h4>
+<table>
+  <tr><th>プラン</th><th>初期費用</th><th>月額</th><th>主な内容</th></tr>
+  <tr><td><strong>Light</strong></td><td>¥250,000</td><td>¥65,000</td><td>友だち獲得施策・基本シナリオ配信</td></tr>
+  <tr><td><strong>Standard</strong></td><td>¥350,000</td><td>¥95,000</td><td>Light + セグメント配信・イベント連動</td></tr>
+  <tr><td><strong>Pro</strong></td><td>¥500,000〜</td><td>¥220,000〜</td><td>Standard + 専任コンサル・カスタムシナリオ</td></tr>
+</table>
+
+<h4>セール運用BPO</h4>
+<table>
+  <tr><th>項目</th><th>費用</th></tr>
+  <tr><td>初期設定</td><td>¥100,000〜¥300,000</td></tr>
+  <tr><td>月額運用</td><td>¥50,000〜</td></tr>
+</table>
+
+<div class="memo-box">
+  <span class="badge">POINT</span><br>
+  LINE運用代行とセールBPOはセットでの導入がおすすめ。セット割引の適用が可能です。まずはLightプラン＋セールBPOの組み合わせからスタートし、効果を見ながらアップグレードする提案が有効です。
+</div>
+
+<h3>DOTZ株式会社 について</h3>
+<table>
+  <tr><th>項目</th><th>内容</th></tr>
+  <tr><td>事業内容</td><td>LINE公式アカウント専門のマーケティング企業</td></tr>
+  <tr><td>認定資格</td><td>LINE Frontliner認定（国内9名のみ）</td></tr>
+  <tr><td>受賞歴</td><td>LINE正規取扱代理店「Bronze」受賞</td></tr>
+  <tr><td>パートナー</td><td>LINE正規テクノロジーパートナー「ミニアプリ部門」受賞</td></tr>
+  <tr><td>所在地</td><td>東京都目黒区青葉台4-4-12 THE N3 2F</td></tr>
+</table>
+`,
+  },
+
+  /* ──────────────────────────────────────────────
+     Tab 4 : ターゲット & ニーズ
+     ────────────────────────────────────────────── */
+  {
+    id: "target-needs",
+    title: "ターゲット & ニーズ",
+    icon: "Target",
+    content: `
+<h2>ターゲット & ニーズ</h2>
+
+<h3>ターゲットプロファイル</h3>
+<table>
+  <tr><th>項目</th><th>内容</th></tr>
+  <tr><td>対象</td><td>楽天市場出店者（月商 数百万円〜数億円規模）</td></tr>
+  <tr><td>決裁者</td><td>店舗運営責任者 / EC事業部長 / マーケティング担当</td></tr>
+  <tr><td>業種</td><td>食品・飲料、アパレル・ファッション、コスメ・美容、日用品・雑貨、健康食品・サプリ</td></tr>
+  <tr><td>共通の悩み</td><td>楽天内広告費の高騰、リピーター不足、セール依存の売上構造</td></tr>
+</table>
+
+<h3>出店者タイプ別アプローチ</h3>
+
+<h4>タイプA：単独店舗型（楽天メイン）</h4>
+<div class="callout callout-info">
+  <strong>特徴</strong>：楽天市場が売上の大半。RPP（楽天プロモーションプラットフォーム）への依存度が高い。<br>
+  <strong>訴求ポイント</strong>：「広告費を抑えながらリピート売上を伸ばす」LINE活用でRPP依存から脱却。<br>
+  <strong>キラーフレーズ</strong>：「RPPのCPCが上がり続けていませんか？LINEでリピーターを増やせば広告依存を減らせます」
+</div>
+
+<h4>タイプB：複数モール出店型（楽天＋Amazon＋Yahoo!等）</h4>
+<div class="callout callout-info">
+  <strong>特徴</strong>：複数モール運営で人手が足りない。LINE運用まで手が回らない。<br>
+  <strong>訴求ポイント</strong>：「完全代行だから追加の人員不要」。各モール横断の顧客接点としてLINEを活用。<br>
+  <strong>キラーフレーズ</strong>：「複数モール運営でお忙しい中、LINE運用は我々が完全代行します。御社の工数はゼロです」
+</div>
+
+<h4>タイプC：メーカー直販型</h4>
+<div class="callout callout-info">
+  <strong>特徴</strong>：自社ブランドの商品を楽天で直販。ブランディングとLTV向上が課題。<br>
+  <strong>訴求ポイント</strong>：「ブランドの世界観に合わせたLINEコミュニケーション設計」。購入者との直接的な関係構築。<br>
+  <strong>キラーフレーズ</strong>：「御社ブランドのファンをLINEで育てませんか？自動シナリオで購入者がリピーターに変わります」
+</div>
+
+<h3>よくある課題5選</h3>
+
+<div class="objection-block">
+  <div class="objection">課題1：LINE公式アカウントの友だちが増えない</div>
+  <div class="response">
+    楽天で購入しても、そのままでは顧客との接点が切れてしまいます。購入導線にLINE友だち追加を組み込むことで、<strong>購入者を「顧客資産」に変える</strong>仕組みが必要です。
+  </div>
+</div>
+
+<div class="objection-block">
+  <div class="objection">課題2：レビュー収集が手動で限界</div>
+  <div class="response">
+    楽天市場ではレビュー数・評価が検索順位と転換率に直結します。手動でのレビュー依頼は漏れが発生しやすく、<strong>自動化による確実なレビュー依頼</strong>が求められています。
+  </div>
+</div>
+
+<div class="objection-block">
+  <div class="objection">課題3：セール時のオペレーションが属人的</div>
+  <div class="response">
+    スーパーSALEやマラソンの度に担当者が深夜対応。配信ミスや配信漏れのリスクが高く、<strong>セール運用の仕組み化・外部委託</strong>が急務です。
+  </div>
+</div>
+
+<div class="objection-block">
+  <div class="objection">課題4：配信のセグメント分けができていない</div>
+  <div class="response">
+    全員に同じメッセージを一斉配信してしまい、ブロック率が上昇。購入履歴・頻度に基づく<strong>セグメント配信でブロック率を抑えつつCV率を向上</strong>させる必要があります。
+  </div>
+</div>
+
+<div class="objection-block">
+  <div class="objection">課題5：楽天内広告のCPAが高騰</div>
+  <div class="response">
+    RPP（楽天プロモーションプラットフォーム）のCPC入札競争が激化し、広告費が膨らむ一方。<strong>LINEによるリピート施策で新規広告依存を低減</strong>する戦略が必要です。
+  </div>
+</div>
+
+<h3>ニーズヒアリング質問集</h3>
+<table>
+  <tr><th>テーマ</th><th>質問例</th><th>狙い</th></tr>
+  <tr><td>売上状況</td><td>「楽天市場の月商はどのくらいですか？」</td><td>規模感の把握・プラン提案の根拠</td></tr>
+  <tr><td>LINE活用</td><td>「LINE公式アカウントはお持ちですか？友だち数はどのくらいですか？」</td><td>現状把握・伸びしろの確認</td></tr>
+  <tr><td>リピート率</td><td>「リピート購入の割合はどのくらいですか？」</td><td>LTV課題の特定</td></tr>
+  <tr><td>セール運用</td><td>「スーパーSALEやマラソン時の配信はどなたが対応されていますか？」</td><td>属人化・負荷の確認</td></tr>
+  <tr><td>レビュー</td><td>「レビュー収集は何か施策をされていますか？」</td><td>自動化ニーズの確認</td></tr>
+  <tr><td>広告費</td><td>「RPPやクーポンアドバンスの月間予算はどのくらいですか？」</td><td>広告費高騰の痛みを引き出す</td></tr>
+  <tr><td>競合</td><td>「同ジャンルの競合店舗と比較して、どこに課題を感じていますか？」</td><td>差別化ポイントの把握</td></tr>
+</table>
+
+<div class="memo-box">
+  <span class="badge">検知ポイント</span><br>
+  以下のキーワードが出たら高確度見込み客：<br>
+  「RPPのCPCが上がっている」「セールの度に徹夜」「LINE作ったけど放置」「レビューが増えない」「リピーターが少ない」「広告費を抑えたい」
+</div>
+`,
+  },
+
+  /* ──────────────────────────────────────────────
      Tab 2 : 一気通貫スクリプト
      ────────────────────────────────────────────── */
   {
@@ -371,213 +578,6 @@ Lightプランなら月額6.5万円からスタートできます。RPP広告費
   ☐ 次回コール日をカレンダーに登録<br>
   ☐ 次のセールイベント日程を確認し、逆算スケジュールを把握<br>
   ☐ 反応メモを記録（興味の度合い・気になっていたポイント・次回の話題）
-</div>
-`,
-  },
-
-  /* ──────────────────────────────────────────────
-     Tab 3 : サービス概要
-     ────────────────────────────────────────────── */
-  {
-    id: "service-overview",
-    title: "サービス概要",
-    icon: "Zap",
-    content: `
-<h2>らくらくモール サービス概要</h2>
-
-<h3>30秒で説明するらくらくモール</h3>
-<div class="callout callout-info">
-  <strong>エレベーターピッチ</strong><br>
-  「らくらくモールは、<strong>楽天市場の出店者様向けにLINE公式アカウントの運用を完全代行するサービス</strong>です。
-  購入者を友だちに変え、自動シナリオ配信でリピート購入を促進。さらに楽天セール時の配信運用もワンストップでお任せいただけます。
-  LINE Frontliner（国内9名のみ）が監修する<strong>楽天市場に特化したLINE運用ノウハウ</strong>で、LTVの最大化を実現します。」
-</div>
-
-<h3>LINE運用代行の5大機能</h3>
-
-<h4>1. 友だち獲得施策</h4>
-<p>楽天市場で商品を購入したお客様をLINE公式アカウントの友だちに転換します。購入完了画面やサンクスメールからの誘導設計、友だち追加時のクーポン配布など、<strong>一度きりの購入者を顧客資産に変える</strong>仕組みを構築します。</p>
-
-<h4>2. 自動シナリオ配信</h4>
-<p>購入行動に基づいた自動トリガー配信を設定します。</p>
-<table>
-  <tr><th>商材タイプ</th><th>シナリオ例</th><th>配信タイミング</th></tr>
-  <tr><td>消耗品（サプリ・化粧品等）</td><td>「そろそろなくなる頃では？」リマインド</td><td>購入後30日・60日・90日</td></tr>
-  <tr><td>アパレル</td><td>コーディネート提案・新作入荷通知</td><td>配送完了後3日・14日</td></tr>
-  <tr><td>食品</td><td>レシピ提案・季節商品のご案内</td><td>配送完了後7日・季節変わり目</td></tr>
-  <tr><td>日用品・ギフト</td><td>リピート割引・関連商品レコメンド</td><td>購入後45日・記念日前</td></tr>
-</table>
-
-<h4>3. セグメント配信</h4>
-<p>購入履歴・購入頻度・購入カテゴリに基づいて友だちをセグメント分けし、<strong>一人ひとりに最適なメッセージ</strong>を配信します。一斉配信と比較してクリック率が平均2〜3倍向上します。</p>
-
-<h4>4. イベント連動配信</h4>
-<p>楽天市場の各種イベントに連動した配信を自動化します。</p>
-<ul>
-  <li><strong>スーパーSALE</strong>（3月・6月・9月・12月）</li>
-  <li><strong>お買い物マラソン</strong>（毎月）</li>
-  <li><strong>ワンダフルデー</strong>（毎月1日）</li>
-  <li><strong>5と0のつく日</strong>（5日・10日・15日・20日・25日・30日）</li>
-  <li><strong>ポイントバック祭</strong>（年4回）</li>
-  <li><strong>ブラックフライデー</strong>（11月）</li>
-</ul>
-
-<h4>5. レビュー促進自動化</h4>
-<p>商品到着後の最適なタイミングでレビュー依頼メッセージを自動配信。レビュー投稿でクーポンを進呈する仕組みにより、<strong>楽天市場内のレビュー数・評価を効率的に増加</strong>させます。</p>
-
-<h3>セール運用BPOサービス</h3>
-<div class="callout callout-warning">
-  <strong>楽天市場の鉄則</strong><br>
-  「楽天の売上はセールで決まる」— 年間売上の大部分がセール期間に集中します。<br>
-  特に<strong>セール開始0〜2時間の初速</strong>がランキングと露出を決定づけ、その後の売上を左右します。
-</div>
-
-<h4>初速最大化の5フェーズ配信</h4>
-<table>
-  <tr><th>フェーズ</th><th>タイミング</th><th>配信内容</th></tr>
-  <tr><td><strong>Phase 1</strong></td><td>セール前日</td><td>タイムセール予告・クーポンプレビュー配信</td></tr>
-  <tr><td><strong>Phase 2</strong></td><td>00:00（セール開始）</td><td>一斉配信 — セール開始通知・目玉商品案内</td></tr>
-  <tr><td><strong>Phase 3</strong></td><td>+30分</td><td>未開封者への追撃配信・リマインド</td></tr>
-  <tr><td><strong>Phase 4</strong></td><td>セール期間中</td><td>日替わり特集・在庫僅少通知・ポイント訴求</td></tr>
-  <tr><td><strong>Phase 5</strong></td><td>セール終盤</td><td>ラストチャンス訴求・次回イベント予告</td></tr>
-</table>
-
-<h4>BPO 4つの完全運用</h4>
-<ol>
-  <li><strong>配信設計</strong> — カレンダー管理、シナリオ設計、セグメント最適化</li>
-  <li><strong>クリエイティブ制作</strong> — メッセージ文面、画像、リッチメニュー作成</li>
-  <li><strong>オペレーション配信</strong> — 予約配信、代行配信、リアルタイム監視</li>
-  <li><strong>改善</strong> — A/Bテスト、分析レポート、週次改善提案</li>
-</ol>
-
-<h3>料金プラン</h3>
-<h4>LINE運用代行</h4>
-<table>
-  <tr><th>プラン</th><th>初期費用</th><th>月額</th><th>主な内容</th></tr>
-  <tr><td><strong>Light</strong></td><td>¥250,000</td><td>¥65,000</td><td>友だち獲得施策・基本シナリオ配信</td></tr>
-  <tr><td><strong>Standard</strong></td><td>¥350,000</td><td>¥95,000</td><td>Light + セグメント配信・イベント連動</td></tr>
-  <tr><td><strong>Pro</strong></td><td>¥500,000〜</td><td>¥220,000〜</td><td>Standard + 専任コンサル・カスタムシナリオ</td></tr>
-</table>
-
-<h4>セール運用BPO</h4>
-<table>
-  <tr><th>項目</th><th>費用</th></tr>
-  <tr><td>初期設定</td><td>¥100,000〜¥300,000</td></tr>
-  <tr><td>月額運用</td><td>¥50,000〜</td></tr>
-</table>
-
-<div class="memo-box">
-  <span class="badge">POINT</span><br>
-  LINE運用代行とセールBPOはセットでの導入がおすすめ。セット割引の適用が可能です。まずはLightプラン＋セールBPOの組み合わせからスタートし、効果を見ながらアップグレードする提案が有効です。
-</div>
-
-<h3>DOTZ株式会社 について</h3>
-<table>
-  <tr><th>項目</th><th>内容</th></tr>
-  <tr><td>事業内容</td><td>LINE公式アカウント専門のマーケティング企業</td></tr>
-  <tr><td>認定資格</td><td>LINE Frontliner認定（国内9名のみ）</td></tr>
-  <tr><td>受賞歴</td><td>LINE正規取扱代理店「Bronze」受賞</td></tr>
-  <tr><td>パートナー</td><td>LINE正規テクノロジーパートナー「ミニアプリ部門」受賞</td></tr>
-  <tr><td>所在地</td><td>東京都目黒区青葉台4-4-12 THE N3 2F</td></tr>
-</table>
-`,
-  },
-
-  /* ──────────────────────────────────────────────
-     Tab 4 : ターゲット & ニーズ
-     ────────────────────────────────────────────── */
-  {
-    id: "target-needs",
-    title: "ターゲット & ニーズ",
-    icon: "Target",
-    content: `
-<h2>ターゲット & ニーズ</h2>
-
-<h3>ターゲットプロファイル</h3>
-<table>
-  <tr><th>項目</th><th>内容</th></tr>
-  <tr><td>対象</td><td>楽天市場出店者（月商 数百万円〜数億円規模）</td></tr>
-  <tr><td>決裁者</td><td>店舗運営責任者 / EC事業部長 / マーケティング担当</td></tr>
-  <tr><td>業種</td><td>食品・飲料、アパレル・ファッション、コスメ・美容、日用品・雑貨、健康食品・サプリ</td></tr>
-  <tr><td>共通の悩み</td><td>楽天内広告費の高騰、リピーター不足、セール依存の売上構造</td></tr>
-</table>
-
-<h3>出店者タイプ別アプローチ</h3>
-
-<h4>タイプA：単独店舗型（楽天メイン）</h4>
-<div class="callout callout-info">
-  <strong>特徴</strong>：楽天市場が売上の大半。RPP（楽天プロモーションプラットフォーム）への依存度が高い。<br>
-  <strong>訴求ポイント</strong>：「広告費を抑えながらリピート売上を伸ばす」LINE活用でRPP依存から脱却。<br>
-  <strong>キラーフレーズ</strong>：「RPPのCPCが上がり続けていませんか？LINEでリピーターを増やせば広告依存を減らせます」
-</div>
-
-<h4>タイプB：複数モール出店型（楽天＋Amazon＋Yahoo!等）</h4>
-<div class="callout callout-info">
-  <strong>特徴</strong>：複数モール運営で人手が足りない。LINE運用まで手が回らない。<br>
-  <strong>訴求ポイント</strong>：「完全代行だから追加の人員不要」。各モール横断の顧客接点としてLINEを活用。<br>
-  <strong>キラーフレーズ</strong>：「複数モール運営でお忙しい中、LINE運用は我々が完全代行します。御社の工数はゼロです」
-</div>
-
-<h4>タイプC：メーカー直販型</h4>
-<div class="callout callout-info">
-  <strong>特徴</strong>：自社ブランドの商品を楽天で直販。ブランディングとLTV向上が課題。<br>
-  <strong>訴求ポイント</strong>：「ブランドの世界観に合わせたLINEコミュニケーション設計」。購入者との直接的な関係構築。<br>
-  <strong>キラーフレーズ</strong>：「御社ブランドのファンをLINEで育てませんか？自動シナリオで購入者がリピーターに変わります」
-</div>
-
-<h3>よくある課題5選</h3>
-
-<div class="objection-block">
-  <div class="objection">課題1：LINE公式アカウントの友だちが増えない</div>
-  <div class="response">
-    楽天で購入しても、そのままでは顧客との接点が切れてしまいます。購入導線にLINE友だち追加を組み込むことで、<strong>購入者を「顧客資産」に変える</strong>仕組みが必要です。
-  </div>
-</div>
-
-<div class="objection-block">
-  <div class="objection">課題2：レビュー収集が手動で限界</div>
-  <div class="response">
-    楽天市場ではレビュー数・評価が検索順位と転換率に直結します。手動でのレビュー依頼は漏れが発生しやすく、<strong>自動化による確実なレビュー依頼</strong>が求められています。
-  </div>
-</div>
-
-<div class="objection-block">
-  <div class="objection">課題3：セール時のオペレーションが属人的</div>
-  <div class="response">
-    スーパーSALEやマラソンの度に担当者が深夜対応。配信ミスや配信漏れのリスクが高く、<strong>セール運用の仕組み化・外部委託</strong>が急務です。
-  </div>
-</div>
-
-<div class="objection-block">
-  <div class="objection">課題4：配信のセグメント分けができていない</div>
-  <div class="response">
-    全員に同じメッセージを一斉配信してしまい、ブロック率が上昇。購入履歴・頻度に基づく<strong>セグメント配信でブロック率を抑えつつCV率を向上</strong>させる必要があります。
-  </div>
-</div>
-
-<div class="objection-block">
-  <div class="objection">課題5：楽天内広告のCPAが高騰</div>
-  <div class="response">
-    RPP（楽天プロモーションプラットフォーム）のCPC入札競争が激化し、広告費が膨らむ一方。<strong>LINEによるリピート施策で新規広告依存を低減</strong>する戦略が必要です。
-  </div>
-</div>
-
-<h3>ニーズヒアリング質問集</h3>
-<table>
-  <tr><th>テーマ</th><th>質問例</th><th>狙い</th></tr>
-  <tr><td>売上状況</td><td>「楽天市場の月商はどのくらいですか？」</td><td>規模感の把握・プラン提案の根拠</td></tr>
-  <tr><td>LINE活用</td><td>「LINE公式アカウントはお持ちですか？友だち数はどのくらいですか？」</td><td>現状把握・伸びしろの確認</td></tr>
-  <tr><td>リピート率</td><td>「リピート購入の割合はどのくらいですか？」</td><td>LTV課題の特定</td></tr>
-  <tr><td>セール運用</td><td>「スーパーSALEやマラソン時の配信はどなたが対応されていますか？」</td><td>属人化・負荷の確認</td></tr>
-  <tr><td>レビュー</td><td>「レビュー収集は何か施策をされていますか？」</td><td>自動化ニーズの確認</td></tr>
-  <tr><td>広告費</td><td>「RPPやクーポンアドバンスの月間予算はどのくらいですか？」</td><td>広告費高騰の痛みを引き出す</td></tr>
-  <tr><td>競合</td><td>「同ジャンルの競合店舗と比較して、どこに課題を感じていますか？」</td><td>差別化ポイントの把握</td></tr>
-</table>
-
-<div class="memo-box">
-  <span class="badge">検知ポイント</span><br>
-  以下のキーワードが出たら高確度見込み客：<br>
-  「RPPのCPCが上がっている」「セールの度に徹夜」「LINE作ったけど放置」「レビューが増えない」「リピーターが少ない」「広告費を抑えたい」
 </div>
 `,
   },
