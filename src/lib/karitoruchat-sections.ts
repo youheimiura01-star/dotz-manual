@@ -320,348 +320,149 @@ export const KARITORUCHAT_SECTIONS: ManualSection[] = [
     icon: "ScrollText",
     content: `
 <h2>一気通貫スクリプト</h2>
-<p>このスクリプトを上から順に読むだけで、受付突破からアポイント獲得まで完結します。<br>
-各フェーズの詳細パターンは、リンク先の専門タブで確認できます。</p>
+<p>このスクリプトを上から順に読むだけで、受付突破からアポイント獲得まで一気に完結します。<br>
+<strong>ヒアリングは商談時に行う</strong>ため、電話ではテンポよくクロージングまで進めてください。</p>
 
-<h3>Phase 1：受付突破（〜30秒）</h3>
-
-<div class="callout callout-info">
-<strong>目的</strong>：決裁者・担当者に電話を繋いでもらう。余計な説明はせず、端的に用件を伝える。
-</div>
+<h3>プロット1：受付突破</h3>
 
 <div class="script-block">
 <span class="label">営業</span>
-「お忙しいところ恐れ入ります。DOTZ株式会社の○○と申します。
-御社のECサイトのLINE活用について、成功事例をお伝えしたくご連絡いたしました。
-広告運用やマーケティングをご担当されている方にお繋ぎいただけますでしょうか？」
+お忙しいところ恐れ入ります。DOTZ株式会社の○○と申します。
+御社のECサイトの広告効果改善について、ご担当者様にお繋ぎいただけますでしょうか。
 </div>
 
-<div class="callout callout-warning">
-<strong>もしこう言われたら</strong>
-</div>
-
-<div class="script-block">
-<span class="label">相手</span>
-「営業のお電話ですか？」
-
-<span class="label">営業</span>
-「いえ、LINE社の認定企業からの情報提供のお電話です。
-御社のEC事業に関係する内容ですので、ご担当の方にお取り次ぎいただければ幸いです。」
-</div>
-
-<div class="script-block">
-<span class="label">相手</span>
-「担当者は今、席を外しておりまして…」
-
-<span class="label">営業</span>
-「かしこまりました。お戻りの時間を教えていただけますか？改めてお電話いたします。
-ちなみにご担当者様のお名前をお伺いしてもよろしいでしょうか？」
-</div>
-
-<div class="memo-box">
-<span class="badge">POINT</span>
-<p>受付突破のコツは<strong>「営業感を出さないこと」</strong>。用件を具体的に・短く伝え、判断を受付に委ねない。不在の場合は必ず戻り時間と名前を確認する。</p>
-</div>
+<table>
+<tr><th>相手の反応</th><th>対応</th></tr>
+<tr><td>「営業ですか？」</td><td>「いえ、LINE社の認定企業からEC事業に関する情報提供のお電話です」</td></tr>
+<tr><td>「どういったご用件ですか？」</td><td>「EC広告のCPA削減に成功した事例のご案内です。広告やマーケのご担当者様にお願いします」</td></tr>
+<tr><td>「担当者不在です」</td><td>「お戻りの時間を教えていただけますか？お名前もお伺いできますと幸いです」</td></tr>
+<tr><td>担当者に繋がった</td><td><strong>→ プロット2へ</strong></td></tr>
+</table>
 
 <a class="scene-card scene-link" data-tab="talk-script" data-heading="0">
-  <div class="scene-situation">受付突破の詳細パターンを見る</div>
-  <div class="scene-description">直接型・情報提供型・業界トレンド型・紹介型の4パターンと受付タイプ別対応を確認</div>
-  <span class="scene-reference">→ トークスクリプト > 受付突破フレーズ集</span>
+  <span class="scene-reference">→ 受付突破の詳細パターンは「トークスクリプト」タブへ</span>
 </a>
 
-<p>▼ 担当者に繋がったら Phase 2 へ進む</p>
-
-<h3>Phase 2：オープニング（〜1分）</h3>
-
-<div class="callout callout-info">
-<strong>流れ</strong>：名乗り → 課題提起（リタゲ効果低下/CPA高騰）→ 共感 → 解決策提示（カリトルチャット）→ 時間の許可
-</div>
+<h3>プロット2：オープニング</h3>
 
 <div class="script-block">
 <span class="label">営業</span>
-「お電話代わりました。ありがとうございます。
-DOTZ株式会社の○○と申します。本日はお時間いただきありがとうございます。
+お電話代わりました、ありがとうございます。
+DOTZ株式会社の○○と申します。
 
-最近、多くのEC事業者様から『リタゲ広告の効果が落ちてきた』『CPAが上がって困っている』
-というお声をいただいておりまして、御社でも同じような課題をお感じではないかと思いご連絡しました。」
+本日は、EC事業者様の<strong>広告CPAを下げながらCVを増やす方法</strong>について
+1分だけお時間いただきたくお電話しました。
 
-<span class="label">相手</span>
-「ああ、確かにCPAは上がってきてますね…」
+今、御社と同じEC事業者様の間で、Cookie規制でリタゲ広告が効きにくくなっている中、
+<strong>LINEを使って離脱ユーザーを追加CVに変える</strong>手法が急速に広がっています。
 
-<span class="label">営業</span>
-「やはりそうですよね。Cookie規制の影響で業界全体の課題になっています。
-
-実は弊社では、そうした課題を解決する『カリトルチャット』というサービスを提供しておりまして、
-<strong>完全成果報酬型なので初期費用も月額費用もゼロ</strong>。
-洋服の青山様ではLINE経由の売上が4倍になった実績があります。
-
-2〜3分ほど、簡単にご説明させていただけませんか？」
-
-<span class="label">相手</span>
-「いいですよ、手短にお願いします。」
+弊社はこの仕組みを<strong>完全成果報酬型（初期0円・月額0円）</strong>で提供しておりまして、
+簡単にご紹介させていただいてもよろしいですか？
 </div>
 
-<div class="callout callout-warning">
-<strong>「忙しい」と言われた場合 → 30秒短縮版</strong>
-</div>
+<table>
+<tr><th>相手の反応</th><th>対応</th></tr>
+<tr><td>「いいですよ」「どうぞ」</td><td><strong>→ プロット3へ</strong></td></tr>
+<tr><td>「忙しい」「時間ない」</td><td>「15秒だけ。ECサイトの離脱者をLINEでCVに変えるサービスです。成果報酬で費用リスクゼロ、400社実績。資料だけお送りしてもいいですか？」→ <strong>プロット4へ</strong></td></tr>
+<tr><td>「間に合ってます」</td><td>「既存施策にプラスする形です。成果報酬なのでリスクゼロで追加CVが獲れます。30秒だけいいですか？」→ <strong>プロット3へ</strong></td></tr>
+</table>
+
+<h3>プロット3：興味づけ</h3>
 
 <div class="script-block">
 <span class="label">営業</span>
-「承知しました。30秒だけお時間ください。
-弊社はLINE認定企業で、ECサイトの離脱者をLINEに誘導してCVを増やすサービスを提供しています。
-<strong>完全成果報酬型で費用リスクゼロ</strong>、400社超の実績があります。
-詳しい資料と導入事例をメールでお送りさせていただけませんか？」
-</div>
-<p>→ 相手が「資料だけなら」と言ったら <strong>Phase 6（パターンB：資料送付クロージング）</strong>へ進む</p>
+ありがとうございます。弊社の「カリトルチャット」を簡潔にお伝えします。
 
-<a class="scene-card scene-link" data-tab="talk-script" data-heading="2">
-  <div class="scene-situation">オープニングトークの詳細を見る</div>
-  <div class="scene-description">担当者への名乗りから興味喚起までの詳しいトークスクリプト</div>
-  <span class="scene-reference">→ トークスクリプト > オープニングトーク</span>
-</a>
-
-<h3>Phase 3：ヒアリング（〜2分）</h3>
-
-<div class="callout callout-info">
-<strong>目的</strong>：相手の状況を把握し、カリトルチャットが刺さるポイントを見つける。質問攻めにせず会話の流れで自然に聞き出す。
-</div>
-
-<div class="script-block">
-<span class="label">営業</span>
-「ありがとうございます。まず御社の状況を少しお聞かせください。
-現在、ECサイトへの集客にはどのような広告チャネルをお使いですか？」
-
-<span class="label">相手</span>
-「主にGoogle広告とMeta広告ですね。」
-
-<span class="label">営業</span>
-「なるほど。月間の広告予算はおおよそどのくらいの規模感でしょうか？」
-
-<span class="label">相手</span>
-「月に○○万円くらいです。」
-
-<span class="label">営業</span>
-「ありがとうございます。そのなかでリタゲ広告の効果が変わったなと感じることはありますか？」
-
-<span class="label">相手</span>
-「正直、以前ほど効かなくなりましたね。」
-
-<span class="label">営業</span>
-「多くの企業様が同じ状況です。ちなみにLINE公式アカウントはお持ちですか？」
-
-<span class="label">相手</span>
-「一応あるんですけど、ほとんど動かせてなくて…」
-
-<span class="label">営業</span>
-「そういう企業様、非常に多いんです。
-実はそこに大きなチャンスがありまして、御社のサイトに来ているお客様をLINEに誘導すれば、
-Cookie規制に左右されずにアプローチできるんです。」
-</div>
-
-<div class="memo-box">
-<span class="badge">検知ポイント</span>
-<p>以下のキーワードが出たら<strong>カリトルチャットが刺さるサイン</strong>です：<br>
-・<strong>LINE放置</strong>：「LINEはあるけど動かせていない」→ 運用代行の価値が高い<br>
-・<strong>CPA高騰</strong>：「広告の費用対効果が下がった」→ 成果報酬型のメリットが響く<br>
-・<strong>Cookie規制の影響</strong>：「リタゲが効かなくなった」→ LINE活用が代替手段になる</p>
-</div>
-
-<a class="scene-card scene-link" data-tab="target-needs" data-heading="1">
-  <div class="scene-situation">顧客課題の詳細パターンを見る</div>
-  <div class="scene-description">CPA高騰・LINE放置・直帰率・Cookie規制・リソース不足の5大課題と検知ポイント</div>
-  <span class="scene-reference">→ ターゲット&ニーズ > よくある課題5選</span>
-</a>
-
-<h3>Phase 4：商材説明（〜2分）</h3>
-
-<div class="callout callout-info">
-<strong>ポイント</strong>：3つのメリットに絞って簡潔に伝える。相手の課題に合わせて強調点を変える。
-</div>
-
-<div class="script-block">
-<span class="label">営業</span>
-「では、カリトルチャットの仕組みを簡単にご説明させてください。
-
-御社のECサイトに来訪したお客様が離脱しようとするタイミングで、
-LINEへの誘導バナーを表示します。
-LINE登録後は、チャットボットで自動的に商品をおすすめしたり、
-プッシュ配信でキャンペーン情報をお届けします。
+仕組みは、御社のECサイトから離脱しようとするユーザーに対して
+LINEへの誘導バナーを表示し、LINE登録後にチャットボットとプッシュ配信で
+自動的にCVまで導くというものです。
 
 ポイントは3つです。
 
-<strong>1つ目、完全成果報酬型でリスクゼロ。</strong>
-初期費用ゼロ、月額費用ゼロ。成果が出た時だけお支払いいただきます。
-成果が出なければ1円もかかりません。
+<strong>① 完全成果報酬型</strong> — 初期0円・月額0円。成果が出なければ費用はゼロです。
+<strong>② 完全代行</strong> — 企画から運用まで全て弊社が行います。御社の工数はほぼゼロです。
+<strong>③ 400社超の実績</strong> — 洋服の青山様でLINE経由売上<strong>4倍</strong>、ロート製薬様でLTV<strong>2倍</strong>。
 
-<strong>2つ目、全て丸投げ。</strong>
-企画・クリエイティブ・シナリオ・配信・レポートまで全て弊社が代行します。
-御社にお願いするのはヒアリングとタグ設置だけです。
-
-<strong>3つ目、400社以上の実績。</strong>
-洋服の青山様でLINE経由売上が4倍、ロート製薬様のD2C事業でLTVが2倍。
-このノウハウを御社にも活かせます。」
-
-<span class="label">相手</span>
-「なるほど、成果報酬なんですね…」
-
-<span class="label">営業</span>
-「はい。ですので御社にとってリスクは一切ないんです。
-効果が出なければ費用ゼロですし、運用も全て弊社にお任せいただけます。」
+今、御社のサイトで離脱しているユーザーの60〜90%を、
+成果報酬型・ノーリスクでCV化できる可能性があります。
 </div>
 
-<a class="scene-card scene-link" data-tab="service-overview" data-heading="0">
-  <div class="scene-situation">サービスの詳細機能を確認する</div>
-  <div class="scene-description">離脱防止ポップアップ・チャットボット・プッシュ配信の3機能と料金体系</div>
-  <span class="scene-reference">→ サービス概要 > 30秒で説明するカリトルチャット</span>
-</a>
+<table>
+<tr><th>相手の反応</th><th>対応</th></tr>
+<tr><td>「面白そう」「もう少し聞きたい」</td><td><strong>→ プロット4（オンラインアポ）へ</strong></td></tr>
+<tr><td>「うちの商材でも使えるの？」</td><td>「アパレル・D2C・化粧品・健康食品・家電等で実績があります。御社に近い事例を商談でご紹介します」→ <strong>プロット4へ</strong></td></tr>
+<tr><td>「効果あるの？」</td><td>「青山様で売上4倍、ロート製薬様でLTV2倍の実績です。しかも成果報酬なので効果がなければ費用ゼロです」→ <strong>プロット4へ</strong></td></tr>
+<tr><td>「予算がない」</td><td>「完全成果報酬なので予算は不要です。成果が出た分だけのお支払い。リスクゼロで始められます」→ <strong>プロット4へ</strong></td></tr>
+<tr><td>「検討します」</td><td>「では事例資料をお送りさせてください」→ <strong>プロット4（資料送付）へ</strong></td></tr>
+</table>
 
-<h3>Phase 5：反論が出たら</h3>
-
-<div class="callout callout-warning">
-<strong>ここで反論が出ることが多いです。</strong>以下のパターンに応じて対応してください。反論は「NO」ではなく「もう少し説得して」のサイン。落ち着いて対応しましょう。
-</div>
-
-<h4>❶「間に合ってます」</h4>
-<div class="script-block">
-<span class="label">相手</span>
-「今は特に必要ないかな…」
-
-<span class="label">営業</span>
-「おっしゃる通り、現状の施策がうまくいっているのは素晴らしいことです。
-ただ、カリトルチャットは既存施策に<strong>プラスする形</strong>で使えるサービスです。
-成果報酬なのでリスクもゼロ。今逃している離脱ユーザーを追加で獲得できます。」
-</div>
 <a class="scene-card scene-link" data-tab="objection-handling" data-heading="0">
-  <div class="scene-situation">「間に合ってます」の詳しい切り返しを見る</div>
-  <div class="scene-description">現状満足の壁を突破するトーク展開</div>
-  <span class="scene-reference">→ 反論対応 > 間に合ってます</span>
+  <span class="scene-reference">→ 反論対応の詳細は「反論対応」タブへ</span>
 </a>
 
-<h4>❷「予算がない」</h4>
-<div class="script-block">
-<span class="label">相手</span>
-「今は予算的に厳しくて…」
+<h3>プロット4：アポ取り / クロージング</h3>
 
-<span class="label">営業</span>
-「ご安心ください。カリトルチャットは<strong>初期0円・月額0円の完全成果報酬型</strong>です。
-成果が出なければ費用はゼロ。むしろ予算に制約がある時こそ最適なサービスなんです。」
+<div class="callout callout-success">
+  <strong>パターンA：オンラインアポ（興味あり）</strong>
 </div>
-<a class="scene-card scene-link" data-tab="objection-handling" data-heading="2">
-  <div class="scene-situation">「予算がない」の詳しい切り返しを見る</div>
-  <div class="scene-description">成果報酬モデルのメリットを活かした説得トーク</div>
-  <span class="scene-reference">→ 反論対応 > 予算がない</span>
-</a>
-
-<h4>❸「検討します」</h4>
-<div class="script-block">
-<span class="label">相手</span>
-「社内で検討してみます。」
-
-<span class="label">営業</span>
-「ありがとうございます。ご検討の材料として詳しい資料をお送りさせてください。」
-</div>
-<p>→ <strong>Phase 6（パターンB：資料送付クロージング）</strong>へ進む</p>
-<a class="scene-card scene-link" data-tab="objection-handling" data-heading="3">
-  <div class="scene-situation">「検討します」の詳しい切り返しを見る</div>
-  <div class="scene-description">次回アポを確実に取るクロージングテクニック</div>
-  <span class="scene-reference">→ 反論対応 > 社内で検討します</span>
-</a>
-
-<h4>❹「効果あるの？」</h4>
-<div class="script-block">
-<span class="label">相手</span>
-「本当に効果あるんですか？」
-
-<span class="label">営業</span>
-「はい、具体的な数字でお伝えします。
-洋服の青山様でLINE経由売上が<strong>4倍</strong>、ロート製薬様でLTVが<strong>2倍</strong>。
-400社以上の運用データがありますので、御社に近い業種の事例もご紹介できます。
-しかも成果報酬型ですので、万が一効果が出なくても費用はゼロです。」
-</div>
-<a class="scene-card scene-link" data-tab="objection-handling" data-heading="5">
-  <div class="scene-situation">「効果あるの？」の詳しい切り返しを見る</div>
-  <div class="scene-description">実績数値を使った説得と信頼構築のトーク</div>
-  <span class="scene-reference">→ 反論対応 > 効果あるの？</span>
-</a>
-
-<div class="memo-box">
-<span class="badge">POINT</span>
-<p>反論は「NO」ではなく<strong>「もう少し説得して」</strong>のサインです。まず相手の意見を受け止めてから切り返す。<br>詳しい切り返しパターンは反論対応タブに網羅されています。</p>
-</div>
-
-<h3>Phase 6：クロージング（〜1分）</h3>
-
-<h4>パターンA：興味が高い場合 → 無料相談アポ</h4>
 
 <div class="script-block">
 <span class="label">営業</span>
-「ここまでお話を聞いていただきありがとうございます。
+ありがとうございます。
+では一度、御社のECサイトを拝見しながら、
+<strong>具体的にどのくらいの追加CVが見込めるか</strong>無料でシミュレーションさせてください。
 
-御社の状況でしたら、カリトルチャットでCPAを抑えながらCV数を増やせる可能性が十分あります。
-
-まずは無料のオンライン相談で、御社のサイトを拝見しながら
-具体的なシミュレーションをさせていただけますか？
-来週の火曜か水曜で30分ほど、いかがでしょうか？」
+30分のオンラインお打ち合わせで完了します。
+来週の火曜か水曜で、ご都合の良いお時間はございますか？
 
 <span class="label">相手</span>
-「水曜の午後なら空いてますよ。」
+「水曜の14時なら空いてます」
 
 <span class="label">営業</span>
-「ありがとうございます。では来週水曜14時でいかがでしょうか？
-オンラインミーティングのURLを本日中にメールでお送りいたします。
-当日は御社のサイトを拝見しながら、具体的な効果見込みをご説明させていただきますね。
-本日はお時間いただきありがとうございました。」
+ありがとうございます。では来週水曜14時で確定させていただきます。
+オンラインミーティングのURLをお送りしますので、メールアドレスをお伺いしてもよろしいですか？
 </div>
 
-<h4>パターンB：まだ慎重な場合 → 資料送付＋次回アポ</h4>
+<div class="callout callout-info">
+  <strong>パターンB：資料送付（まだ慎重）</strong>
+</div>
 
 <div class="script-block">
 <span class="label">営業</span>
-「では、まず詳しい資料と導入事例をお送りさせてください。
-洋服の青山様やロート製薬様の具体的な数値も入っていますので、ご参考になると思います。
-
-資料をお送りした後、来週○曜日に改めてお電話させていただいてもよろしいですか？
-資料の内容についてのご質問にもお答えできますので。」
+では、洋服の青山様やロート製薬様の具体的な成果数値が入った資料をお送りさせてください。
+メールアドレスをお伺いしてもよろしいですか？
 
 <span class="label">相手</span>
-「わかりました、資料を見てみます。」
+「○○@○○.co.jpです」
 
 <span class="label">営業</span>
-「ありがとうございます。では来週○曜日の午前中にお電話させていただきますね。
-メールアドレスをお伺いしてもよろしいですか？本日中に資料をお送りいたします。
-本日はお忙しいところありがとうございました。」
+ありがとうございます。本日中にお送りいたします。
+資料をご覧いただいた翌日、○曜日にお電話させていただいてもよろしいですか？
+5分程度で資料のポイントだけご説明させてください。
 </div>
 
-<div class="memo-box">
-<span class="badge">POINT</span>
-<p><strong>必ず次のアクション（日時）を確定させて電話を終える。</strong><br>
-「検討します」「また連絡します」で終わらせない。「○日○時にお電話しますね」と具体的に約束する。</p>
-</div>
+<h3>プロット5：メール確認・お礼</h3>
 
-<a class="scene-card scene-link" data-tab="case-studies" data-heading="0">
-  <div class="scene-situation">導入実績の詳しい数値を確認する</div>
-  <div class="scene-description">洋服の青山で売上4倍、ロート製薬でLTV2倍の詳細データ</div>
-  <span class="scene-reference">→ 導入事例 > 実績サマリー</span>
-</a>
+<div class="script-block">
+<span class="label">営業</span>
+（メールアドレスの確認）
+確認させてください。○○@○○.co.jp、○○様のお名前は漢字でどのようにお書きしますか？
+
+ちなみに、○○様のお役職とご所属の部署名をお伺いしてもよろしいですか？
+（任意：聞ける雰囲気なら）
+
+<span class="label">営業</span>
+本日は貴重なお時間をいただき、どうもありがとうございました。
+引き続きよろしくお願いいたします。失礼いたします。
+</div>
 
 <h3>電話終了後のアクション</h3>
 
-<div class="callout callout-success">
-<strong>電話を切ったら、すぐに以下を実行してください。</strong>
-</div>
-
 <ul>
-<li><strong>ヒアリング内容をCRMに記録</strong>：相手の課題・使用広告チャネル・予算感・LINE運用状況・反応の良かったポイント</li>
-<li><strong>資料送付が必要な場合は即日対応</strong>：時間が経つと相手の記憶が薄れる。メール本文にも通話で話した内容を簡潔に記載</li>
-<li><strong>次回コール日をカレンダーに登録</strong>：約束した日時を必ず登録。前日にリマインドを設定</li>
-<li><strong>反応が良かったポイントを記録</strong>：「成果報酬型に反応」「CPA高騰の話で共感」等、次回コールの切り口に活用</li>
+<li><strong>CRM記録</strong>：担当者名・役職・メールアドレス・反応の良かったポイント・次回アクション</li>
+<li><strong>資料送付は即日</strong>：時間が経つと記憶が薄れる。メール本文に通話内容を簡潔に記載</li>
+<li><strong>次回コール日をカレンダー登録</strong>：約束した日時を必ず登録、前日リマインド設定</li>
 </ul>
-
-<div class="memo-box">
-<span class="badge">POINT</span>
-<p>電話直後の5分が勝負。記憶が鮮明なうちに全て記録する。<br>
-「次にこの人に電話するとき、何を話せばいいか」が分かる状態にしておく。</p>
-</div>
 `,
   },
 
