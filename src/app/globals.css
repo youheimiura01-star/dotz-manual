@@ -246,6 +246,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.manual-content .script-block strong {
+  color: #ffffff;
+}
+
 /* Info/Warning boxes */
 .manual-content .info-box {
   background: var(--color-primary-50);
